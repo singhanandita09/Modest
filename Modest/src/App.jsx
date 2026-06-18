@@ -1,4 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
+
+import Navbar from "./COMPONENTS/Navbar";
 
 import Home from "./PAGES/Home/Home";
 import About from "./PAGES/About";
@@ -12,9 +14,12 @@ import NewsEvent from "./PAGES/NewsEvent";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
+    <HashRouter>
+      {/* Common Navbar */}
+      <Navbar />
 
+      {/* Routes */}
+      <Routes>
         {/* Home */}
         <Route path="/" element={<Home />} />
 
@@ -32,9 +37,8 @@ function App() {
         {/* Team */}
         <Route path="/members" element={<Members />} />
         <Route path="/students" element={<Students />} />
-
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

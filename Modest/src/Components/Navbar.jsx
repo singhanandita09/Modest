@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
+  const linkClass = ({ isActive }) =>
+    isActive ? "text-purple-400" : "hover:text-purple-400";
+
   return (
     <header className="sticky top-0 z-50 w-full border-t-4 border-[#25545c] border-b-[6px] border-[#575757] bg-black">
       <div className="mx-auto flex h-[78px] max-w-[1750px] items-center justify-between px-24">
-        <Link to="/" className="flex items-center gap-5">
+        <NavLink to="/" className="flex items-center gap-5">
           <img
             src="/modest_logo.png"
             alt="MODEST Logo"
@@ -14,36 +17,73 @@ function Navbar() {
           <span className="text-[26px] font-bold tracking-wide text-white">
             MODEST
           </span>
-        </Link>
-        
+        </NavLink>
 
         <nav>
           <ul className="flex items-center gap-7 text-[17px] font-medium text-white">
-            <li><Link to="/" className="hover:text-purple-400">Welcome</Link></li>
+            <li>
+              <NavLink to="/" className={linkClass}>
+                Welcome
+              </NavLink>
+            </li>
 
-            <li><Link to="/about" className="hover:text-purple-400">About</Link></li>
+            <li>
+              <NavLink to="/about" className={linkClass}>
+                About
+              </NavLink>
+            </li>
 
-            <li><Link to="/research-publications" className="hover:text-purple-400">Research & Publications</Link></li>
+            <li>
+              <NavLink to="/research-publications" className={linkClass}>
+                Research & Publications
+              </NavLink>
+            </li>
 
-            <li><Link to="/framework" className="hover:text-purple-400">The MODEST Framework</Link></li>
+            <li>
+              <NavLink to="/framework" className={linkClass}>
+                The MODEST Framework
+              </NavLink>
+            </li>
 
-            <li><Link to="/services" className="hover:text-purple-400">Services</Link></li>
+            <li>
+              <NavLink to="/services" className={linkClass}>
+                Services
+              </NavLink>
+            </li>
 
-            <li><Link to="/newsevents" className="hover:text-purple-400">News & Events</Link></li>
+            <li>
+              <NavLink to="/newsevents" className={linkClass}>
+                News & Events
+              </NavLink>
+            </li>
 
-            <li><Link to="/contact" className="hover:text-purple-400">Contact</Link></li>
+            <li>
+              <NavLink to="/contact" className={linkClass}>
+                Contact
+              </NavLink>
+            </li>
+
             <li className="group relative">
               <button className="hover:text-purple-400">
                 Team <i className="fa-solid fa-caret-down ml-1 text-xs"></i>
               </button>
 
               <div className="absolute left-0 top-full hidden w-44 bg-[#111] py-3 shadow-xl group-hover:block">
-                <a href="/members" className="block px-5 py-3 hover:bg-purple-700">Members</a>
-                <a href="/students" className="block px-5 py-3 hover:bg-purple-700">Students</a>
+                <NavLink
+                  to="/members"
+                  className="block px-5 py-3 hover:bg-purple-700"
+                >
+                  Members
+                </NavLink>
+
+                <NavLink
+                  to="/students"
+                  className="block px-5 py-3 hover:bg-purple-700"
+                >
+                  Students
+                </NavLink>
               </div>
             </li>
-
-            
           </ul>
         </nav>
       </div>
