@@ -1,6 +1,7 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./COMPONENTS/Navbar";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 import Home from "./PAGES/Home/Home";
 import About from "./PAGES/About";
@@ -15,29 +16,23 @@ import NewsEvent from "./PAGES/NewsEvent";
 function App() {
   return (
     <HashRouter>
-      {/* Common Navbar */}
       <Navbar />
 
-      {/* Routes */}
       <Routes>
-        {/* Home */}
         <Route path="/" element={<Home />} />
 
-        {/* Main Pages */}
         <Route path="/about" element={<About />} />
-        <Route
-          path="/research-publications"
-          element={<ResearchPublication />}
-        />
+        <Route path="/research-publications" element={<ResearchPublication />} />
         <Route path="/framework" element={<Framework />} />
         <Route path="/services" element={<Services />} />
         <Route path="/newsevents" element={<NewsEvent />} />
         <Route path="/contact" element={<Contact />} />
 
-        {/* Team */}
         <Route path="/members" element={<Members />} />
         <Route path="/students" element={<Students />} />
       </Routes>
+
+      <Footer />
     </HashRouter>
   );
 }

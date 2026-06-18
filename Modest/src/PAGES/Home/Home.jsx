@@ -10,7 +10,9 @@ function Home() {
             Your Journey to Well-being Starts Here
           </h1>
 
-          <p className="mb-8 text-2xl">Find Support and Guidance</p>
+          <p className="mb-8 text-2xl">
+            Find Support and Guidance
+          </p>
 
           <button className="rounded-md border-2 border-white px-10 py-3 text-lg transition hover:bg-white hover:text-[#4b5146]">
             Contact Us
@@ -53,9 +55,11 @@ function Home() {
         <div className="grid gap-16 md:grid-cols-3">
           <div>
             <i className="fa-solid fa-heart mb-6 text-6xl"></i>
+
             <h3 className="mb-4 font-serif text-4xl">
               Expertise with <br /> Heart
             </h3>
+
             <p className="text-lg">
               Skilled therapists who truly <br /> understand and care
             </p>
@@ -63,9 +67,11 @@ function Home() {
 
           <div>
             <i className="fa-solid fa-lock mb-6 text-6xl"></i>
+
             <h3 className="mb-4 font-serif text-4xl">
               Confidentiality <br /> Assured
             </h3>
+
             <p className="text-lg">
               A safe space to open up without <br /> judgment
             </p>
@@ -73,34 +79,17 @@ function Home() {
 
           <div>
             <i className="fa-solid fa-handshake mb-6 text-6xl"></i>
+
             <h3 className="mb-4 font-serif text-4xl">
               A Supportive <br /> Community
             </h3>
+
             <p className="text-lg">
               Connecting with others on a similar <br /> journey
             </p>
           </div>
         </div>
       </section>
-
-      <footer
-        id="contact"
-        className="flex items-center justify-between px-20 py-8"
-      >
-        <p>© 2024. All Rights Reserved.</p>
-
-        <div className="flex gap-8 text-2xl">
-          <a href="#">
-            <i className="fa-brands fa-facebook-f hover:text-black"></i>
-          </a>
-          <a href="#">
-            <i className="fa-brands fa-instagram hover:text-black"></i>
-          </a>
-          <a href="#">
-            <i className="fa-brands fa-tiktok hover:text-black"></i>
-          </a>
-        </div>
-      </footer>
     </main>
   );
 }
