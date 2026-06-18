@@ -6,13 +6,13 @@ function About() {
 
                 <div className="absolute inset-0">
                     <img
-                        src="/public/Images/About-bg.png"
+                        src="/public/Image/About.bg.png"
                         alt=""
-                        className="w-full h-full object-cover opacity-50"
+                        className="w-full h-full object-cover opacity-50 px-8"
                     />
                 </div>
                 <div className="max-w-5xl">
-                    <h1 className="uppercase tracking-[4px] text-[#6B705C] text-shadow-lg mb-6 text-8xl">
+                    <h1 className="uppercase tracking-[4px] text-[#2a2d1f] text-shadow-lg mb-6 text-8xl">
                         MODEST
                     </h1>
 
