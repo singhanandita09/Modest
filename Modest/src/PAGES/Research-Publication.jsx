@@ -131,13 +131,9 @@ function ResearchPublication() {
             Deliverables & Progress
           </h2>
 
-          <p className="text-xl text-[#5f5346] mb-6">
-            Current Milestone: 40% Completion
-          </p>
+          
 
-          <div className="w-full h-5 bg-gray-200 rounded-full mb-10">
-            <div className="w-[40%] h-5 bg-[#50584d] rounded-full"></div>
-          </div>
+         
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
