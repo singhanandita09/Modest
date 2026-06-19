@@ -1,96 +1,159 @@
+import Navbar from "../../Components/Navbar";
+
 function Home() {
   return (
-    <main className="min-h-screen bg-[#f4efeb] text-[#4b5146]">
-      <section
-        id="welcome"
-        className="grid min-h-[560px] overflow-hidden bg-[#4b5146] md:grid-cols-2"
-      >
-        <div className="flex flex-col items-center justify-center px-12 text-center text-white">
-          <h1 className="mb-6 max-w-xl font-serif text-5xl leading-tight">
-            Your Journey to Well-being Starts Here
-          </h1>
+    <>
 
-          <p className="mb-8 text-2xl">
-            Find Support and Guidance
-          </p>
 
-          <button className="rounded-md border-2 border-white px-10 py-3 text-lg transition hover:bg-white hover:text-[#4b5146]">
-            Contact Us
-          </button>
-        </div>
-
-        <div>
+      <main className="bg-white text-[#2f332d]">
+        {/* Hero */}
+        <section className="relative min-h-screen flex items-center px-10 md:px-24 overflow-hidden bg-[#f4efeb]">
           <img
-            src="/mental-health.jpg"
-            alt="Meditation"
-            className="h-full w-full object-cover opacity-80"
+            src="/public/Image/About.bg.png"
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover opacity-90"
           />
-        </div>
-      </section>
 
-      <section
-        id="about"
-        className="grid items-center gap-10 px-24 py-12 md:grid-cols-2"
-      >
-        <h2 className="font-serif text-5xl leading-tight">
-          Prioritize Your <br /> Mental Health
-        </h2>
+          <div className="relative z-10 max-w-4xl">
+            <h1 className="text-8xl md:text-8xl tracking-[12px] font-light text-[#6B705C] text-shadow-lg">
+              MODEST
+            </h1>
 
-        <p className="text-lg leading-8">
-          We partner with you to unlock your potential and achieve your goals.
-          Our experienced therapists provide compassionate and effective care,
-          helping you navigate life's challenges and build a stronger, more
-          fulfilling life.
-        </p>
-      </section>
+            <h2 className="mt-10 font-serif text-4xl md:text-6xl leading-tight text-[#6B705C] max-w-6xl">
+              Multimodal Analysis for Mental Disorder Recognition to Improve Well-being
+            </h2>
+          </div>
+        </section>
 
-      <section
-        id="services"
-        className="bg-[#4b5146] px-20 py-24 text-center text-white"
-      >
-        <h2 className="mb-20 font-serif text-5xl">
-          Your Well-being is Our Priority
-        </h2>
-
-        <div className="grid gap-16 md:grid-cols-3">
+        {/* MODEST Initiative */}
+        <section className="grid items-center gap-16 px-10 py-24 md:grid-cols-2 md:px-28">
           <div>
-            <i className="fa-solid fa-heart mb-6 text-6xl"></i>
+            <h2 className="mb-8 font-serif text-4xl italic text-[#6B705C]">
+              The MODEST Initiative
+            </h2>
 
-            <h3 className="mb-4 font-serif text-4xl">
-              Expertise with <br /> Heart
-            </h3>
+            <p className="mb-6 text-lg leading-9">
+              The <b>MODEST</b> project addresses the critical need for early and
+              accurate mental disorder recognition. By leveraging
+              state-of-the-art <b>Multimodal Fusion</b>, our research combines
+              visual expressions, linguistic patterns from textual data, and
+              subtle user interaction behaviors.
+            </p>
 
-            <p className="text-lg">
-              Skilled therapists who truly <br /> understand and care
+            <p className="text-lg leading-9">
+              Our objective is to create a robust Electronic Health framework
+              that assists clinicians in the early identification of conditions
+              such as Depression and ADHD, moving beyond traditional survey-based
+              diagnostics into the era of Intelligent Healthcare.
             </p>
           </div>
 
-          <div>
-            <i className="fa-solid fa-lock mb-6 text-6xl"></i>
+          <div className="flex justify-center">
+            <img
+              src="/public/Image/mental-health.png"
+              alt="Mental Health Awareness Logo"
+              className="max-h-[520px] w-full object-contain"
+            />
+          </div>
+        </section>
 
-            <h3 className="mb-4 font-serif text-4xl">
-              Confidentiality <br /> Assured
-            </h3>
+        {/* Principal Investigator */}
+        <section className="border-t border-[#5b6254] bg-[#6B705C] px-10 py-24 md:px-32 text-white">
+          <div className="grid items-center gap-20 md:grid-cols-[360px_1fr]">
+            <div className="text-center">
+              <img
+                src="/images/sonali-agarwal.jpg"
+                alt="Prof. Sonali Agarwal"
+                className="mx-auto h-[430px] w-[330px] object-cover"
+              />
 
-            <p className="text-lg">
-              A safe space to open up without <br /> judgment
+              <a
+                href="https://your-profile-link.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <a
+                  href="https://profile.iiita.ac.in/sonali/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-8 rounded-md bg-[#43453f] px-10 py-3 text-white transition hover:bg-[#4b5146]"
+                >
+                  View Full Profile
+                </a>
+              </a>
+            </div>
+
+            <div>
+              <h2 className="mb-6 text-4xl font-bold text-white">
+                Principal Investigator
+              </h2>
+
+              <p className="mb-6 text-4xl font-bold">
+                Prof. Sonali Agarwal
+              </p>
+
+              <p className="mb-8 text-xl font-semibold">
+                Professor, Dept. of Information Technology,{" "}
+                <span className="text-[#f8f9f6]">IIIT Allahabad</span>
+              </p>
+
+              <p className="mb-8 text-lg leading-9">
+                Prof. Sonali Agarwal brings over two decades of expertise in{" "}
+                <b>Big Data Analytics, Machine Learning, and Data Mining</b>.
+                She has been a pioneer in applying intelligent systems to
+                healthcare problems, having published over 200 research papers
+                in prestigious international journals and conferences.
+              </p>
+
+              <p className="text-lg leading-9">
+                Under her leadership, the lab focuses on developing
+                technology-enabled environments to solve complex real-world
+                social and medical challenges.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Dataset + Community */}
+        <section className="grid gap-10 bg-[#f4efeb] px-10 py-24 md:grid-cols-2 md:px-28">
+          <div className="bg-white p-12">
+            <h2 className="mb-5 font-serif text-4xl text-[#6B705C]">
+              Open Datasets
+            </h2>
+            <p className="mb-8 text-lg leading-8">
+              Access our curated multimodal datasets for mental health research
+              and analysis.
             </p>
+           <a
+                  href="https://github.com/BDA-IIITA/MODEST"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-8 rounded-md bg-[#43453f] px-10 py-3 text-white transition hover:bg-[#4b5146]"
+                >
+                  View Repository
+                </a>
           </div>
 
-          <div>
-            <i className="fa-solid fa-handshake mb-6 text-6xl"></i>
-
-            <h3 className="mb-4 font-serif text-4xl">
-              A Supportive <br /> Community
-            </h3>
-
-            <p className="text-lg">
-              Connecting with others on a similar <br /> journey
+          <div className="bg-white p-12">
+            <h2 className="mb-5 font-serif text-4xl text-[#6B705C]">
+              Community
+            </h2>
+            <p className="mb-8 text-lg leading-8">
+              Wellness initiatives specifically tailored for the IIIT Allahabad
+              student communities.
             </p>
+            <a
+                  href="https://bdasp.iiita.ac.in/#/contact"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-8 rounded-md bg-[#6B705C] px-10 py-3 text-white transition hover:bg-[#4b5146]"
+                >
+                  Join us
+                </a>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </>
   );
 }
 

@@ -2,24 +2,21 @@ function About() {
     return (
         <div className="bg-[#F5F1EC] text-[#2B2B2B]">
             {/* Hero */}
-            <section className="relative min-h-[80vh] flex items-center px-8 md:px-20 overflow-hidden">
+            <section className="relative min-h-[520px] flex items-center justify-center overflow-hidden bg-[#F5F1EC]">
+                <img
+                    src="/images/modest-bg.png"
+                    alt=""
+                    className="absolute inset-0 w-full h-full object-cover opacity-50"
+                />
 
-                <div className="absolute inset-0">
-                    <img
-                        src="/public/Image/About.bg.png"
-                        alt=""
-                        className="w-full h-full object-cover opacity-50 px-8"
-                    />
-                </div>
-                <div className="max-w-5xl">
-                    <h1 className="uppercase tracking-[4px] text-[#2a2d1f] text-shadow-lg mb-6 text-8xl">
+                <div className="max-w-6xl mx-auto text-center">
+                    <h1 className="text-5xl md:text-7xl font-serif text-[#7c7569] drop-shadow-lg">
                         MODEST
                     </h1>
 
-                    <h5 className="font-serif text-5xl md:text-5xl leading-tight text-[#3F4638]">
+                    <p className="mt-6 text-xl text-[#5f5346]">
                         Multimodal Analysis for Mental Disorder Recognition to Improve
-                        Well-being
-                    </h5>
+                    </p>
                 </div>
             </section>
 
