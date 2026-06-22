@@ -1,38 +1,35 @@
-import Navbar from "../../Components/Navbar";
-
 function Home() {
   return (
     <>
-
-
       <main className="bg-white text-[#2f332d]">
         {/* Hero */}
-        <section className="relative min-h-screen flex items-center px-10 md:px-24 overflow-hidden bg-[#f4efeb]">
+        <section className="relative min-h-screen flex items-center px-6 sm:px-10 md:px-24 overflow-hidden bg-[#f4efeb]">
           <img
-            src="/public/Image/About.bg.png"
+            src="/Image/About.bg.png"
             alt=""
             className="absolute inset-0 h-full w-full object-cover opacity-90"
           />
 
           <div className="relative z-10 max-w-4xl">
-            <h1 className="text-8xl md:text-8xl tracking-[12px] font-light text-[#6B705C] text-shadow-lg">
+            <h1 className="text-5xl sm:text-6xl md:text-8xl tracking-[6px] md:tracking-[12px] font-light text-[#6B705C] text-shadow-lg">
               MODEST
             </h1>
 
-            <h2 className="mt-10 font-serif text-4xl md:text-6xl leading-tight text-[#6B705C] max-w-6xl">
-              Multimodal Analysis for Mental Disorder Recognition to Improve Well-being
+            <h2 className="mt-6 md:mt-10 font-serif text-2xl sm:text-3xl md:text-6xl leading-tight text-[#6B705C] max-w-6xl">
+              Multimodal Analysis for Mental Disorder Recognition to Improve
+              Well-being
             </h2>
           </div>
         </section>
 
         {/* MODEST Initiative */}
-        <section className="grid items-center gap-16 px-10 py-24 md:grid-cols-2 md:px-28">
+        <section className="grid items-center gap-12 md:gap-16 px-6 sm:px-10 py-16 md:py-24 md:grid-cols-2 md:px-28">
           <div>
-            <h2 className="mb-8 font-serif text-4xl italic text-[#6B705C]">
+            <h2 className="mb-6 md:mb-8 font-serif text-3xl md:text-4xl italic text-[#6B705C]">
               The MODEST Initiative
             </h2>
 
-            <p className="mb-6 text-lg leading-9">
+            <p className="mb-6 text-base md:text-lg leading-8 md:leading-9">
               The <b>MODEST</b> project addresses the critical need for early and
               accurate mental disorder recognition. By leveraging
               state-of-the-art <b>Multimodal Fusion</b>, our research combines
@@ -40,7 +37,7 @@ function Home() {
               subtle user interaction behaviors.
             </p>
 
-            <p className="text-lg leading-9">
+            <p className="text-base md:text-lg leading-8 md:leading-9">
               Our objective is to create a robust Electronic Health framework
               that assists clinicians in the early identification of conditions
               such as Depression and ADHD, moving beyond traditional survey-based
@@ -50,54 +47,48 @@ function Home() {
 
           <div className="flex justify-center">
             <img
-              src="/public/Image/mental-health.png"
+              src="/Image/mental-health.png"
               alt="Mental Health Awareness Logo"
-              className="max-h-[520px] w-full object-contain"
+              className="max-h-[300px] md:max-h-[520px] w-full object-contain"
             />
           </div>
         </section>
 
         {/* Principal Investigator */}
-        <section className="border-t border-[#5b6254] bg-[#6B705C] px-10 py-24 md:px-32 text-white">
-          <div className="grid items-center gap-20 md:grid-cols-[360px_1fr]">
+        <section className="border-t border-[#5b6254] bg-[#6B705C] px-6 sm:px-10 py-16 md:py-24 md:px-32 text-white">
+          <div className="grid items-center gap-12 md:gap-20 md:grid-cols-[360px_1fr]">
             <div className="text-center">
               <img
                 src="/images/sonali-agarwal.jpg"
                 alt="Prof. Sonali Agarwal"
-                className="mx-auto h-[430px] w-[330px] object-cover"
+                className="mx-auto h-[330px] w-[250px] md:h-[430px] md:w-[330px] object-cover"
               />
 
               <a
-                href="https://your-profile-link.com"
+                href="https://profile.iiita.ac.in/sonali/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="inline-block mt-8 rounded-md bg-[#43453f] px-8 md:px-10 py-3 text-white transition hover:bg-[#4b5146]"
               >
-                <a
-                  href="https://profile.iiita.ac.in/sonali/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block mt-8 rounded-md bg-[#43453f] px-10 py-3 text-white transition hover:bg-[#4b5146]"
-                >
-                  View Full Profile
-                </a>
+                View Full Profile
               </a>
             </div>
 
             <div>
-              <h2 className="mb-6 text-4xl font-bold text-white">
+              <h2 className="mb-6 text-3xl md:text-4xl font-bold text-white">
                 Principal Investigator
               </h2>
 
-              <p className="mb-6 text-4xl font-bold">
+              <p className="mb-6 text-3xl md:text-4xl font-bold">
                 Prof. Sonali Agarwal
               </p>
 
-              <p className="mb-8 text-xl font-semibold">
+              <p className="mb-8 text-lg md:text-xl font-semibold">
                 Professor, Dept. of Information Technology,{" "}
                 <span className="text-[#f8f9f6]">IIIT Allahabad</span>
               </p>
 
-              <p className="mb-8 text-lg leading-9">
+              <p className="mb-8 text-base md:text-lg leading-8 md:leading-9">
                 Prof. Sonali Agarwal brings over two decades of expertise in{" "}
                 <b>Big Data Analytics, Machine Learning, and Data Mining</b>.
                 She has been a pioneer in applying intelligent systems to
@@ -105,7 +96,7 @@ function Home() {
                 in prestigious international journals and conferences.
               </p>
 
-              <p className="text-lg leading-9">
+              <p className="text-base md:text-lg leading-8 md:leading-9">
                 Under her leadership, the lab focuses on developing
                 technology-enabled environments to solve complex real-world
                 social and medical challenges.
@@ -115,41 +106,45 @@ function Home() {
         </section>
 
         {/* Dataset + Community */}
-        <section className="grid gap-10 bg-[#f4efeb] px-10 py-24 md:grid-cols-2 md:px-28">
-          <div className="bg-white p-12">
-            <h2 className="mb-5 font-serif text-4xl text-[#6B705C]">
+        <section className="grid gap-8 md:gap-10 bg-[#f4efeb] px-6 sm:px-10 py-16 md:py-24 md:grid-cols-2 md:px-28">
+          <div className="bg-white p-8 md:p-12 shadow-sm">
+            <h2 className="mb-5 font-serif text-3xl md:text-4xl text-[#6B705C]">
               Open Datasets
             </h2>
-            <p className="mb-8 text-lg leading-8">
+
+            <p className="mb-8 text-base md:text-lg leading-8">
               Access our curated multimodal datasets for mental health research
               and analysis.
             </p>
-           <a
-                  href="https://github.com/BDA-IIITA/MODEST"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block mt-8 rounded-md bg-[#43453f] px-10 py-3 text-white transition hover:bg-[#4b5146]"
-                >
-                  View Repository
-                </a>
+
+            <a
+              href="https://github.com/BDA-IIITA/MODEST"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 md:mt-8 rounded-md bg-[#43453f] px-8 md:px-10 py-3 text-white transition hover:bg-[#4b5146]"
+            >
+              View Repository
+            </a>
           </div>
 
-          <div className="bg-white p-12">
-            <h2 className="mb-5 font-serif text-4xl text-[#6B705C]">
+          <div className="bg-white p-8 md:p-12 shadow-sm">
+            <h2 className="mb-5 font-serif text-3xl md:text-4xl text-[#6B705C]">
               Community
             </h2>
-            <p className="mb-8 text-lg leading-8">
+
+            <p className="mb-8 text-base md:text-lg leading-8">
               Wellness initiatives specifically tailored for the IIIT Allahabad
               student communities.
             </p>
+
             <a
-                  href="https://bdasp.iiita.ac.in/#/contact"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block mt-8 rounded-md bg-[#6B705C] px-10 py-3 text-white transition hover:bg-[#4b5146]"
-                >
-                  Join us
-                </a>
+              href="https://bdasp.iiita.ac.in/#/contact"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 md:mt-8 rounded-md bg-[#6B705C] px-8 md:px-10 py-3 text-white transition hover:bg-[#4b5146]"
+            >
+              Join us
+            </a>
           </div>
         </section>
       </main>
