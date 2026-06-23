@@ -95,6 +95,8 @@ function Contact() {
                 sonali@iiita.ac.in
                 <br />
                 rsi2026003@iiita.ac.in
+                <br />
+                prf.sarthak@iiita.ac.in
               </p>
             </div>
 
@@ -104,6 +106,7 @@ function Contact() {
               </h3>
               <p className="text-[#5f5346] wrap-break-words">
                 himanshisingh0312@gmail.com
+                sarthakkesarwani2001@gmail.com
               </p>
             </div>
           </div>

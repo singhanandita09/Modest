@@ -5,7 +5,7 @@ function Home() {
         {/* Hero */}
         <section className="relative min-h-screen flex items-center px-6 sm:px-10 md:px-24 overflow-hidden bg-[#f4efeb]">
           <img
-            src="/Image/About.bg.png"
+            src="/Image/About-bg.png"
             alt=""
             className="absolute inset-0 h-full w-full object-cover opacity-90"
           />
